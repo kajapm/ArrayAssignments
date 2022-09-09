@@ -1,10 +1,20 @@
-package myAssignments;
 
-public class sortNumbersOnWeight 
+import java.util.*;
+public class SortNumbersOnWeight 
 {
 	public static void main(String args[])
 	{
-	int[] integerArray= {49,36,8,10,12};
+	Scanner scan=new Scanner(System.in);
+	System.out.println("Enter the array Length");
+	int arrayLength=scan.nextInt();
+	
+	int[] integerArray= new int[arrayLength];
+	for(int i=0;i<arrayLength;i++)
+	{
+		System.out.println("Enter Elements :");
+		integerArray[i]=scan.nextInt();
+	}
+		
 	int[][] finalArray=new int[integerArray.length][2];
 	
 	for(int i=0;i<integerArray.length;i++)
