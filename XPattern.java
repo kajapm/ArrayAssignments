@@ -19,20 +19,16 @@ public class XPattern {
 			{
 				for(int j=0;j<input.length();j++)
 				{
-					if(i==j)
+					if(i==j || length-i==j)
 					{
-						System.out.print(input.charAt(i));
+						System.out.print(input.charAt(j));
 					}
-					else if((input.length()-1)-i==j)
-					{
-						System.out.print(input.charAt(length));
-					}
+					
 					else
 					{
 						System.out.print(" ");
 					}
 				}
-				length--;
 				System.out.println("");
 			}
 		}
