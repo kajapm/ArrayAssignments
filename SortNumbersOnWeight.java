@@ -64,7 +64,5 @@ public class SortNumbersOnWeight
 		System.out.println("");
 	}
 	}
-		
-	
 }
 
